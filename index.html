@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>जागतिक कृषी महोत्सव </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f1f1;
+    font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+    padding: 25px 12px;
+    color: #202a32;
+}
+
+.main-container {
+    max-width: 680px;
+    margin: auto;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+/* HEADER */
+
+.top-header {
+    min-height: 340px;
+    background: linear-gradient(135deg,#ff9d43,#f58b31);
+    text-align: center;
+    padding: 55px 20px 110px;
+    color: white;
+}
+
+.organization {
+    font-size: clamp(17px,3vw,25px);
+    font-weight: 600;
+    line-height: 1.9;
+}
+
+.swami {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    color: #fff8e9;
+}
+
+/* CONTENT */
+
+.content {
+    background: white;
+    text-align: center;
+    padding: 0 30px 35px;
+}
+
+/* OFFICIAL LOGO */
+
+.logo-wrapper {
+    width: 155px;
+    height: 155px;
+    margin: -90px auto 25px;
+    position: relative;
+    border-radius: 50%;
+    background: white;
+    padding: 9px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* TITLE */
+
+.main-title {
+    font-size: clamp(25px,5vw,37px);
+    font-weight: 800;
+    color: #26323b;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #687078;
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+/* SOCIAL LINKS */
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 18px 20px;
+    background: #f7f8fa;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all .3s ease;
+    min-height: 95px;
+}
+
+.social-card:hover {
+    transform: translateY(-4px);
+    background: #f0f3f5;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.social-icon {
+    width: 65px;
+    min-width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.social-icon img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}
+.social-info {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.social-info h3 {
+    font-size: 21px;
+    color: #20252b;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.social-info p {
+    font-size: 14px;
+    color: #7a8188;
+    overflow-wrap: anywhere;
+}
+
+.arrow {
+    font-size: 34px;
+    color: #9ba2a9;
+    padding-left: 8px;
+}
+
+.instagram .social-icon { color: #d62976; }
+.facebook .social-icon { color: #1877f2; }
+.website .social-icon { color: #299447; }
+.whatsapp .social-icon { color: #25b968; }
+.youtube .social-icon { color: #e62117; }
+
+/* FOOTER */
+
+.footer {
+    background: #fff7ed;
+    border-top: 1px solid #ffe1c2;
+    padding: 28px 20px;
+    text-align: center;
+    color: #26323b;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.footer strong {
+    display: block;
+    font-size: 23px;
+    color: #d97720;
+    text-align: center;
+}
+
+.footer-title {
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 800;
+    color: #26323b;
+    margin-top: 3px;
+}
+
+/* CONTACT */
+
+.contact-section {
+    margin-top: 18px;
+    padding: 18px 15px;
+    background: white;
+    border: 1px solid #ffe1c2;
+    border-radius: 18px;
+}
+
+.contact-title {
+    font-size: 19px;
+    font-weight: 800;
+    color: #d97720;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.contact-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #26323b;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 13px;
+    background: #fff7ed;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.call-icon {
+    font-size: 21px;
+    color: #25a45a;
+}
+
+.contact-divider {
+    color: #d97720;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* MOBILE */
+
+@media(max-width:480px) {
+
+    body {
+        padding: 8px;
+    }
+
+    .main-container {
+        border-radius: 25px;
+    }
+
+    .top-header {
+        min-height: 300px;
+        padding: 40px 15px 90px;
+    }
+
+    .content {
+        padding: 0 18px 25px;
+    }
+
+    .logo-wrapper {
+        width: 140px;
+        height: 140px;
+        margin-top: -75px;
+    }
+
+    .main-title {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .social-card {
+        min-height: 85px;
+        padding: 13px 12px;
+        border-radius: 17px;
+    }
+
+    .social-icon {
+        width: 50px;
+        min-width: 50px;
+        font-size: 31px;
+    }
+
+    .social-icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-info h3 {
+        font-size: 18px;
+    }
+
+    .social-info p {
+        font-size: 12px;
+    }
+
+    .arrow {
+        font-size: 27px;
+    }
+
+    .contact-numbers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .contact-divider {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+        <div class="swami">
+            ॥ श्री स्वामी समर्थ ॥
+        </div>
+
+        <div class="organization">
+            श्री स्वामी समर्थ सेवा व आध्यात्मिक विकास मार्ग
+            <br>
+            (दिंडोरी प्रणीत), नाशिक, महाराष्ट्र
+        </div>
+
+    </header>
+
+    <main class="content">
+
+        <!-- ONLY OFFICIAL LOGO -->
+
+        <div class="logo-wrapper">
+            <img src="./logo.png.png"
+                 alt="जागतिक कृषी महोत्सव अधिकृत लोगो">
+        </div>
+
+        <h1 class="main-title">
+            जागतिक कृषी महोत्सव २०२६
+        </h1>
+
+        <p class="description">
+            कृषी पुनर्जागरण • शाश्वत शेती • समृद्ध शेतकरी
+            <br>
+            महोत्सवाच्या सर्व उपक्रमांची माहिती मिळवा.
+        </p>
+
+        <!-- SOCIAL MEDIA -->
+
+        <a class="social-card instagram"
+href="https://www.instagram.com/jagtikkrushimahotsav?xtok=Mmt3bWtnamJ5anBy"
+target="_blank" rel="noopener noreferrer">
+
+    <div class="social-icon">
+        <img src="./instagram.png.png" alt="Instagram Logo">
+    </div>
+
+    <div class="social-info">
+        <h3>Instagram</h3>
+        <p>@jagtikkrushimahotsav</p>
+    </div>
+
+    <div class="arrow">→</div>
+</a>
+
+            <a class="social-card facebook"
+            href="https://www.facebook.com/share/1FGcStUK98/"
+            target="_blank" rel="noopener noreferrer">
+
+                <div class="social-icon">f</div>
+
+                <div class="social-info">
+                    <h3>Facebook</h3>
+                    <p>जागतिक कृषी महोत्सव</p>
+                </div>
+
+                <div class="arrow">→</div>
+            </a>
+
+            <a class="social-card website"
+            href="https://krushimahotsav.org/"
+            target="_blank" rel="noopener noreferrer">
+
+                <div class="social-icon">🌐</div>
+
+                <div class="social-info">
+                    <h3>Official Website</h3>
+                    <p>krushimahotsav.org</p>
+                </div>
+
+                <div class="arrow">→</div>
+            </a>
+
+           <a class="social-card whatsapp"
+href="https://whatsapp.com/channel/0029Vb9RzwQBFLgZG7CeRt2T"
+target="_blank" rel="noopener noreferrer">
+
+    <div class="social-icon">
+        <img src="./whatsapp.png.png" alt="WhatsApp Logo">
+    </div>
+
+    <div class="social-info">
+        <h3>WhatsApp</h3>
+        <p>Join Our Official Channel</p>
+    </div>
+
+    <div class="arrow">→</div>
+
+</a>
+
+           <a class="social-card youtube"
+href="https://youtube.com/@krushimahotsav5690?si=Yqiu2lnwJu55ISss"
+target="_blank" rel="noopener noreferrer">
+
+    <div class="social-icon">
+        <img src="./youtube.png.png" alt="YouTube Logo">
+    </div>
+
+    <div class="social-info">
+        <h3>YouTube</h3>
+        <p>@krushimahotsav5690</p>
+    </div>
+
+    <div class="arrow">→</div>
+</a>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <strong>॥ श्री स्वामी समर्थ ॥</strong>
+
+        <div class="footer-title">
+            जागतिक कृषी महोत्सव
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="contact-section">
+
+            <div class="contact-title">संपर्क</div>
+
+            <div class="contact-numbers">
+
+                <a href="tel:9423568419" class="contact-item">
+                    <span class="call-icon">☎</span>
+                    9423568419
+                </a>
+
+                <span class="contact-divider">|</span>
+
+                <a href="tel:8208006633" class="contact-item">
+                    <span class="call-icon">☎</span>
+                    8208006633
+                </a>
+
+            </div>
+
+        </div>
+
+        <br>
+        © All Rights Reserved
+
+    </footer>
+
+</div>
+
+</body>
+</html>
