@@ -224,25 +224,27 @@ body {
 }
 
 .contact-numbers {
+   .contact-numbers {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 12px;
 }
 
 .contact-item {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     text-decoration: none;
     color: #26323b;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
-    padding: 10px 13px;
+    padding: 10px 12px;
     background: #fff7ed;
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    white-space: nowrap;
 }
 
 .call-icon {
