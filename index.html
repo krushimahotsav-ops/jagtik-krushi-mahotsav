@@ -213,24 +213,35 @@ body {
 .contact-section {
     margin-top: 18px;
     padding: 18px 15px;
-    background: white;
+    background: #fff7ed;
     border: 1px solid #ffe1c2;
     border-radius: 18px;
 }
 
-.contact-title {
-    font-size: 19px;
-    font-weight: 800;
-    color: #d97720;
-    margin-bottom: 14px;
-    text-align: center;
-}
-  .contact-numbers {
+.contact-layout {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #d97720;
+}
+
+.contact-numbers {
+    display: flex;
+    flex-direction: column;
     gap: 5px;
+}
+
+.contact-numbers a {
+    text-decoration: none;
+    color: #26323b;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .contact-item {
@@ -483,27 +494,20 @@ target="_blank" rel="noopener noreferrer">
 
         <!-- CONTACT -->
 
-        <div class="contact-section">
+       <div class="contact-section">
 
-            <div class="contact-title">संपर्क</div>
+    <div class="contact-layout">
 
-            <div class="contact-numbers">
+        <div class="contact-title">संपर्क :-</div>
 
-                <a href="tel:9423568419" class="contact-item">
-                    <span class="call-icon">☎</span>
-                    9423568419
-                </a>
-
-                <span class="contact-divider">|</span>
-
-                <a href="tel:8208006633" class="contact-item">
-                    <span class="call-icon">☎</span>
-                    8208006633
-                </a>
-
-            </div>
-
+        <div class="contact-numbers">
+            <a href="tel:9423568419">9423568419</a>
+            <a href="tel:8208006633">8208006633</a>
         </div>
+
+    </div>
+
+</div>
 
         <br>
         © All Rights Reserved
